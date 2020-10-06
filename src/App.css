@@ -2,7 +2,7 @@
   margin: 0;
 }
 body {
-  background-color: #f5f6fa;
+  background-color: #13151a;
 }
 
 .app {
@@ -13,6 +13,11 @@ body {
 
 .app__left {
   flex: 0.9;
+}
+
+.app__rightNewCases {
+  margin-top: 10px;
+  margin-bottom: 20px;
 }
 
 .app__header {
@@ -31,4 +36,39 @@ body {
   .app {
     flex-direction: column;
   }
+}
+
+.app__img {
+  display: flex;
+}
+
+.app__img img {
+  width: 50px;
+  height: 50px;
+  align-items: center;
+  margin-right: 10px;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .app__img img {
+    animation: App-logo-spin infinite 10s linear;
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.app__img h1 {
+  color: white;
+}
+
+.app__dropdown {
+  background-color: white !important;
 }
